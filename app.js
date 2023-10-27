@@ -8,6 +8,8 @@ const app = express();
 
 app.use(cors());
 
+app.get("/", (req, res) => res.send("Alive"));
+
 app.use("/api/blog", blogRoutes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
