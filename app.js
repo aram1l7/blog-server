@@ -11,3 +11,5 @@ app.use(cors());
 app.use("/api/blog", blogRoutes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+module.exports = app;
